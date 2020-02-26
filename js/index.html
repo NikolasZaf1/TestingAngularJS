@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="tut">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("tut", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.message = "Hello Angular";
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        {{message}}
+    </div>
+</body>
+</html>
